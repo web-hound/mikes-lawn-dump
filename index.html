@@ -71,14 +71,17 @@
         <p class="mhl-kicker">Contact Mike</p>
         <h2>Ready to get your project handled?</h2>
         <p>
-          Call Mike directly or send the details below. This form is set up for
-          future Netlify form submissions when the site is deployed there.
+          Call Mike directly or send the details below. Your request will go
+          straight to Mike once the site is deployed.
         </p>
         <a href="tel:5095140594" class="mhl-btn-primary">Call 509-514-0594</a>
       </div>
 
-      <form class="mhl-contact-form" name="contact" method="POST" data-netlify="true">
+      <form class="mhl-contact-form" name="contact" method="POST" action="/thank-you.html" netlify netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact">
+        <p class="mhl-hidden">
+          <label>Do not fill this out if you are human: <input name="bot-field"></label>
+        </p>
 
         <label for="name">Name</label>
         <input id="name" name="Name" type="text" autocomplete="name" required>
