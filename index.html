@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Lawn & Dump Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mhl-header">
+    <a class="mhl-logo" href="#home">Mike's Lawn & Dump</a>
+
+    <nav class="mhl-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="mhl-home">
+      <div class="mhl-content">
+        <p class="mhl-kicker">Local Lawn & Home Services</p>
+
+        <h1>Mike's Lawn & Dump Services</h1>
+
+        <h2>Reliable help for your yard, home, and outdoor projects.</h2>
+
+        <p>
+          Mike's Lawn & Dump provides dependable lawn care, yard cleanup,
+          mowing, trimming, dump runs, and general outdoor home services.
+          Clean work, fair pricing, and friendly service you can count on.
+        </p>
+
+        <div class="mhl-buttons">
+          <a href="tel:5095140594" class="mhl-btn-primary">Call 509-514-0594</a>
+          <a href="#services" class="mhl-btn-secondary">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mhl-services">
+      <p class="mhl-kicker">What We Do</p>
+      <h2>Home and lawn services made simple.</h2>
+
+      <div class="mhl-service-grid">
+        <article class="mhl-card">
+          <h3>Lawn Mowing</h3>
+          <p>Clean, consistent mowing to keep your yard looking sharp.</p>
+        </article>
+
+        <article class="mhl-card">
+          <h3>Trimming & Edging</h3>
+          <p>Detail work around sidewalks, fences, driveways, and flower beds.</p>
+        </article>
+
+        <article class="mhl-card">
+          <h3>Yard Cleanup</h3>
+          <p>Leaves, branches, weeds, and general outdoor cleanup.</p>
+        </article>
+
+        <article class="mhl-card">
+          <h3>Dump Runs</h3>
+          <p>Hauling and dump runs for yard waste, clutter, and small cleanouts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="mhl-contact">
+      <div class="mhl-contact-copy">
+        <p class="mhl-kicker">Contact Mike</p>
+        <h2>Ready to get your project handled?</h2>
+        <p>
+          Call Mike directly or send the details below. This form is set up for
+          future Netlify form submissions when the site is deployed there.
+        </p>
+        <a href="tel:5095140594" class="mhl-btn-primary">Call 509-514-0594</a>
+      </div>
+
+      <form class="mhl-contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+        <label for="name">Name</label>
+        <input id="name" name="Name" type="text" autocomplete="name" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="Phone Number" type="tel" autocomplete="tel" required>
+
+        <label for="service">Service needed</label>
+        <select id="service" name="Service Needed" required>
+          <option value="">Choose a service</option>
+          <option value="Lawn mowing">Lawn mowing</option>
+          <option value="Trimming and edging">Trimming and edging</option>
+          <option value="Yard cleanup">Yard cleanup</option>
+          <option value="Dump run">Dump run</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Project details</label>
+        <textarea id="message" name="Project Details" rows="6" required></textarea>
+
+        <button class="mhl-btn-primary" type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

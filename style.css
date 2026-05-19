@@ -1,0 +1,315 @@
+/* ===== Mike's Lawn & Dump Services ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* ===== HEADER / NAVIGATION ===== */
+
+.mhl-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 8%;
+  background: rgba(13, 13, 13, 0.94);
+  border-bottom: 1px solid #242424;
+}
+
+.mhl-logo {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.mhl-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.mhl-nav a {
+  color: #cfcfcf;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.mhl-nav a:hover {
+  color: #4ade80;
+}
+
+/* ===== HERO SECTION ===== */
+
+.mhl-home {
+  min-height: calc(90vh - 65px);
+  display: flex;
+  align-items: center;
+  padding: 100px 8%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    linear-gradient(135deg, #0f0f0f 0%, #111111 45%, #16361d 100%);
+}
+
+.mhl-content {
+  max-width: 760px;
+}
+
+.mhl-kicker {
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.mhl-home h1 {
+  font-size: 78px;
+  line-height: 0.95;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.mhl-home h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.mhl-home p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cfcfcf;
+  max-width: 650px;
+}
+
+/* ===== BUTTONS ===== */
+
+.mhl-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.mhl-btn-primary,
+.mhl-btn-secondary {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.mhl-btn-primary {
+  background: #22c55e;
+  color: #0d0d0d;
+}
+
+.mhl-btn-primary:hover {
+  background: #4ade80;
+  transform: translateY(-2px);
+}
+
+.mhl-btn-secondary {
+  border: 2px solid #22c55e;
+  color: #ffffff;
+}
+
+.mhl-btn-secondary:hover {
+  background: #22c55e;
+  color: #0d0d0d;
+}
+
+/* ===== SERVICES SECTION ===== */
+
+.mhl-services {
+  padding: 100px 8%;
+  background: #111111;
+  text-align: center;
+}
+
+.mhl-services h2 {
+  font-size: 42px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.mhl-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.mhl-card {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  padding: 32px;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.mhl-card:hover {
+  border-color: #22c55e;
+  transform: translateY(-6px);
+}
+
+.mhl-card h3 {
+  color: #4ade80;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.mhl-card p {
+  color: #cfcfcf;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ===== CONTACT SECTION ===== */
+
+.mhl-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
+  gap: 48px;
+  align-items: start;
+  padding: 90px 8%;
+  background: #0d0d0d;
+}
+
+.mhl-contact h2 {
+  max-width: 720px;
+  margin: 10px 0 20px;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.mhl-contact-copy p {
+  max-width: 560px;
+  color: #cfcfcf;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.mhl-contact-copy .mhl-btn-primary {
+  margin-top: 14px;
+}
+
+.mhl-contact-form {
+  display: grid;
+  gap: 12px;
+  padding: 30px;
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+}
+
+.mhl-contact-form label {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.mhl-contact-form input,
+.mhl-contact-form select,
+.mhl-contact-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 14px;
+  color: #ffffff;
+  font: inherit;
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 10px;
+}
+
+.mhl-contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.mhl-contact-form input:focus,
+.mhl-contact-form select:focus,
+.mhl-contact-form textarea:focus {
+  outline: 3px solid rgba(74, 222, 128, 0.24);
+  border-color: #22c55e;
+}
+
+.mhl-contact-form button {
+  border: 0;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .mhl-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 7%;
+  }
+
+  .mhl-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mhl-home {
+    padding: 80px 7%;
+  }
+
+  .mhl-home h1 {
+    font-size: 52px;
+  }
+
+  .mhl-home h2 {
+    font-size: 24px;
+  }
+
+  .mhl-home p {
+    font-size: 16px;
+  }
+
+  .mhl-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mhl-btn-primary,
+  .mhl-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mhl-services h2,
+  .mhl-contact h2 {
+    font-size: 32px;
+  }
+
+  .mhl-contact {
+    grid-template-columns: 1fr;
+    padding: 80px 7%;
+  }
+}
